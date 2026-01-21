@@ -149,6 +149,7 @@ Busca praticidade, rapidez e compras locais.
 ### Prints ou pequenos vídeos das interações com a IA;
 - Interação com a plataforma Lovable:
 <img width="1910" height="855" alt="image" src="https://github.com/user-attachments/assets/3d8661ea-51ab-487c-bd85-ad1a563bd848" />
+https://artisan-shelf-pro.lovable.app/
 
 ### Resumo
 
