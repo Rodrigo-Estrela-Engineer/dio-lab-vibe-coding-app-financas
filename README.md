@@ -1,88 +1,169 @@
-# 💸 App de Organização de Finanças Pessoais com Vibe Coding
+# 💸 App de App de criação de Ecommerce com Vibe Coding
+Este projeto foi desenvolvido como um Desafio de Projeto da DIO de Vibe Coding utilizando o Lovable e o Copilot Web. A proposta é criar um aplicativo utilizando interações em linguagem natural com **Vibe Coding**
 
-Aprenda a **criar soluções com IA** de forma criativa, guiando ferramentas como o **Copilot** e o **Lovable** com uma comunicação simples e natural. O foco é desenvolver o conceito de um **App de Organização de Finanças Pessoais**, mas, acima de tudo, aprender o **jeito Vibe de programar com IA**.
-
-## ✨ O que é Vibe Coding
+##  O que é Vibe Coding
 
 **Vibe Coding** é uma forma leve e criativa de desenvolver com IA, baseada em **conversas naturais e bem estruturadas**. Você não precisa escrever código linha por linha. Em vez disso, aprende a **guiar a IA** descrevendo suas ideias de forma clara, com **intenção e contexto**. Em outras palavras:
 
 > Você mostra a vibe da sua ideia e a IA transforma em solução (ou em um caminho para ela).
 
-## 🎯 Desafio
 
-Problema: Muitas pessoas não conseguem manter um controle financeiro porque os aplicativos exigem muita entrada de dados manual, e a criação de orçamentos é vista como algo tedioso. 
 
-Precisamos de uma solução que permita **controlar as finanças por meio de uma conversa simples**, com **agentes de IA** capazes de criar **planos de economia personalizados e automatizados**. Você deve utilizar as ideias de **Vibe Coding** e **MVP (Produto Mínimo Viável)** para desenvolver o **conceito de um aplicativo** que resolva o problema citado.
+### Meu **prompt final** (PRD);
 
-> [!IMPORTANT]
-> Você **não precisa construir o código**! O foco está em **usar a IA como sua parceira criativa**, transformando boas ideias e prompts em conceitos funcionais que simulam um produto real.
+```
+  
+# PRD – MVP E‑commerce para Pequenos Negociantes
 
-## 🪄 Etapas do Desafio
+## 1. Visão Geral
+Plataforma de e‑commerce simples para pequenos comerciantes criarem uma loja online rapidamente e começarem a vender.
 
-### 1. Saber o que Pedir é a Chave! Otimize seus Prompts!
+## 2. Objetivos
+- Criar loja virtual em poucos minutos.  
+- Simplificar cadastro de produtos e recebimento de pedidos.  
+- Oferecer experiência de compra rápida e intuitiva ao cliente.  
+- Garantir fluxo completo: navegação → carrinho → checkout → pagamento.  
+- Incluir suporte inteligente via IA para ajudar o comerciante a utilizar o sistema e melhorar suas vendas.
 
-Antes de pedir para a IA "criar um app", é importante definir com clareza o que você quer construir e por quê. Para isso, você vai criar um **PRD (Product Requirements Document)** simplificado, uma especificação que serve como _briefing_ para a IA entender sua ideia.
+## 3. Personas
 
-Um bom PRD deve descrever o problema, quem será beneficiado, as principais funcionalidades e o que você espera que a IA entregue. Use o modelo abaixo como ponto de partida e adapte conforme o seu estilo:
+### Comerciante
+Pouca familiaridade técnica, foco em vender e ser encontrado.
 
-```txt
-# Contexto
-Quero criar um aplicativo de Organização de Finanças Pessoais que funcione por meio de conversas com o usuário.  
-A ideia é facilitar o controle financeiro de forma simples e natural, sem formulários manuais ou planilhas complexas.
+### Cliente
+Busca praticidade, rapidez e compras locais.
 
-# Problema
-Muitas pessoas desistem de controlar seus gastos porque os apps atuais exigem muita entrada manual e pouca personalização.  
-Quero resolver isso com uma experiência de conversa e recomendações automáticas de economia.
+## 4. Escopo do MVP
 
-# Público-Alvo
-Pessoas que querem começar a organizar suas finanças de forma prática e sem complicação, principalmente iniciantes.
+### 4.1 Cadastro e Onboarding do Comerciante
+- Criar conta via email ou Google.  
+- Informar nome da loja, logo, endereço e categoria.  
+- Passo a passo inicial simples.
 
-# Funcionalidades-Chave
-1. Registrar gastos via chat em linguagem natural.  
-2. Classificar automaticamente as transações.  
-3. Definir e acompanhar metas financeiras.  
-4. Receber dicas de economia do “Agente Financeiro”.  
-5. Visualizar relatórios simples e personalizados.
+### 4.2 Catálogo de Produtos
+- Criar, editar e remover produtos.  
+- Campos: nome, descrição, fotos, preço, estoque, categoria.  
+- Status: ativo/inativo.
 
-# Entregável da IA
-Gerar um plano de MVP com as principais telas, recursos necessários e um esboço de validação inicial.  
-Usar tom educativo e linguagem acessível, em português.
+### 4.3 Loja Online
+- Página pública com URL gerada automaticamente.  
+- Layout responsivo.  
+- Exibição de logo, produtos, preços e informações da loja.
+
+### 4.4 Carrinho e Checkout
+- Adicionar/remover produtos.  
+- Resumo do pedido.  
+- Checkout com:
+  - Dados pessoais  
+  - Endereço ou retirada  
+  - Forma de pagamento  
+
+### 4.5 Pagamentos
+- Pix.  
+- Pagamento na retirada (offline).
+
+### 4.6 Pedidos do Comerciante
+- Lista de pedidos.  
+- Detalhes do cliente, itens e total.  
+- Status: Recebido, Em preparação, Finalizado, Cancelado.
+
+### 4.7 Área do Cliente
+- Histórico de pedidos.  
+- Detalhes do pedido.  
+- Acompanhamento de status.
+
+### 4.8 Painel do Comerciante
+- Total de vendas.  
+- Total de pedidos.  
+- Produtos mais vendidos.  
+- Acesso rápido a catálogo, pedidos e configurações.
+
+### 4.9 Cadastro e Login do Cliente
+- Criar conta com email/senha ou Google.  
+- Campos básicos: nome, telefone, email.  
+- Login com recuperação de senha.  
+- Endereço obrigatório apenas no checkout.
+
+### 4.10 Chatbot IA para o Comerciante
+- Assistente virtual integrado ao painel do comerciante.  
+- Auxilia no uso da plataforma com comandos contextuais (ex.: “como cadastrar um produto?”, “como atualizar um pedido?”).  
+- Sugere boas práticas de venda:  
+  - Melhoria de descrições de produto  
+  - Sugestões de preço com base em categoria  
+  - Recomendações de estoque  
+  - Dicas de marketing simples (títulos, fotos, promoções)  
+- Suporte disponível 24h.  
+
+## 5. Requisitos Não Funcionais
+- Carregamento das páginas em até 2s.  
+- HTTPS e criptografia.  
+- Escalabilidade básica.  
+- Conformidade LGPD.  
+- Layout mobile‑first.  
+
+## 6. Fluxos
+
+### Fluxo do Comerciante
+1. Criar conta  
+2. Onboarding  
+3. Cadastrar produtos  
+4. Publicar loja  
+5. Receber pedidos  
+6. Atualizar status  
+7. (Opcional) Utilizar o chatbot IA para orientações e dicas  
+
+### Fluxo do Cliente
+1. Entrar na loja  
+2. Ver produtos  
+3. Adicionar ao carrinho  
+4. Cadastrar ou fazer login  
+5. Preencher checkout  
+6. Pagar  
+7. Receber confirmação  
+8. Acompanhar pedido  
+
+## 7. Métricas
+- Lojas criadas  
+- Clientes cadastrados  
+- Produtos cadastrados  
+- Pedidos totais  
+- Conversão visita → compra  
+- Vendas por comerciante  
+- Utilização do chatbot IA  
+
+## 8. Restrições
+- Uma loja por comerciante.  
+- Layout único no MVP.  
+- Apenas Pix e pagamento offline.  
+- Sem cupons, avaliações ou integrações.  
+
+## 9. Riscos
+- Abandono se cadastro/login forem complexos.  
+- Catálogo mal configurado pode reduzir conversão.  
+- Comerciantes podem ter dificuldades com estoque.  
+- Dependência do chatbot para tarefas simples se interface não for intuitiva.
+``
+
 ```
 
-Depois de preencher o modelo, use o Copilot Web para revisar e melhorar o seu prompt antes de ir ao Lovable. A ideia é lapidar o texto até que ele fique claro, direto e reflita exatamente a sua intenção.
+### Prints ou pequenos vídeos das interações com a IA;
+- Interação com a plataforma Lovable:
+<img width="1910" height="855" alt="image" src="https://github.com/user-attachments/assets/3d8661ea-51ab-487c-bd85-ad1a563bd848" />
 
-> [!TIP]
-> Pense no PRD/Prompt como “o briefing que a IA precisa para entender sua vibe”. Portanto, quanto mais claro e intencional for o texto, mais próximas do ideal serão as respostas da IA.
+### Resumo
 
-### 2. Explorando o Lovable na Prática
+O app permite que pequenos comerciantes criem sua própria loja virtual em poucos minutos, oferecendo ferramentas simples para cadastrar produtos, receber pedidos, realizar vendas via Pix e gerenciar o negócio online. Ele inclui uma página de loja pronta, carrinho, checkout, painel do comerciante e uma área do cliente. O sistema também conta com um chatbot de IA integrado, que ajuda o comerciante a usar a plataforma, orienta sobre boas práticas e fornece dicas para aumentar as vendas.
 
-Com seu PRD pronto e revisado, é hora de colocar a IA em ação. Abra o Lovable, cole seu prompt completo e peça o plano inicial do MVP do seu aplicativo. Como o plano gratuito limita você a 5 interações por dia, seja estratégico:
-- Faça perguntas diretas e construtivas, como “crie o fluxo de telas com base nas funcionalidades listadas” ou “gere uma versão resumida do plano de MVP”;
-- Priorize clareza nas instruções para aproveitar ao máximo cada resposta;
+### Uma breve **reflexão sobre o processo**:
+- O que funcionou bem?
+  
+  A plataforma Lovable se mostrou eficiente na rápida criação de esboços para que possamos aprimorar e personalizar rapidamente nossa ideia
+- O que não funcionou como o esperado?
+  
+  Nem todas as páginas foram criadas, apenas as essenciais para uma visualização rápida
 
-Durante essa etapa, você pode orientar a IA para três entregas principais:
-1. Agente Financeiro: defina o comportamento e o tom de voz de um consultor financeiro pessoal, alinhado ao público e objetivo do app.
-2. Fluxo de Telas: peça à IA para gerar o fluxo conceitual de telas com base nas funcionalidades descritas no PRD, simulando a interação por conversa.
-3. Plano de MVP: solicite um resumo das 5 funcionalidades principais, dos recursos necessários e um plano de validação inicial (como medir se o app cumpre seu propósito).
 
-> [!TIP]
-> Se preferir, você pode fazer tudo com o **Copilot**. O importante é exercitar a habilidade de transformar intenções em instruções claras e testar os limites da IA como parceira criativa.
 
-### 3. Entregando o Desafio na DIO
-
-Finalize seu projeto criando um **repositório no GitHub** (pode ser um **fork** deste).  
-No README do seu repositório, inclua:
-
-- Seu **prompt final** (PRD);  
-- Prints ou pequenos vídeos das interações com a IA;  
-- Um resumo do que o seu **App de Finanças Pessoais** faz;  
-- Uma breve **reflexão sobre o processo**:
-  - O que funcionou bem?  
-  - O que não funcionou como o esperado?  
-  - O que aprendeu sobre conversar com IAs?
-
-> [!TIP]
-> Publique seu repositório e compartilhe o link na plataforma da DIO! Sua entrega é a prova de que você domina o raciocínio de Vibe Coding, mesmo sem escrever uma única linha de código.
 
 ## 💬 Conclusão
 
